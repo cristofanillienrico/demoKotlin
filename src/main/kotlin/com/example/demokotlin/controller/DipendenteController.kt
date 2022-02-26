@@ -1,6 +1,7 @@
 package com.example.demokotlin.controller
 
 import com.example.demokotlin.dto.DipendenteDTO
+import com.example.demokotlin.dto.DipendenteDTO.Companion.toDTO
 import com.example.demokotlin.model.Dipendente
 import com.example.demokotlin.service.DipendenteService
 import org.springframework.web.bind.annotation.GetMapping
@@ -21,7 +22,5 @@ class DipendenteController(
         return view
     }
 
-    fun Dipendente.toDTO() = DipendenteDTO(
-        nomeCompleto = "$nome $cognome"
-    )
+
 }
