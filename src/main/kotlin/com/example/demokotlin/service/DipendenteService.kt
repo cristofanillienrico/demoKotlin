@@ -10,4 +10,8 @@ class DipendenteService(private val dipendenteRepository: DipendenteRepository) 
     fun findAll(): MutableList<Dipendente> {
         return dipendenteRepository.findAll()
     }
+
+    fun save(dipendente: Dipendente): Dipendente {
+        return dipendenteRepository.save(dipendente)
+    }
 }
