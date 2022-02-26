@@ -20,8 +20,6 @@ class Dipendente(
     var id: Int? = null,
 ) {
 
-    fun toDTO() = DipendenteDTO(
-        nomeCompleto = "$nome $cognome"
-    )
+
 
 }
